@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruslanov</title>
+    <link rel="stylesheet" href="source.css">
+    <script src="https://kit.fontawesome.com/d706dd9979.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="IMAGES/images-removebg-preview.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Some Photo</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Student of 10C</h1>
+                <h2>Hi, I am Chingiz<br> And I am the <span>strongest</span> wrestler,<br>in  TKTL</h2>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------- -->
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMAGES/photo1707920166 (1).jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title1">About Me</h1>
+                <p>I am Chingiz Ruslanov, a student of 10 grade at the Sapat High School. <br>
+                    I am studying in SOC/GUM profile. This is due to the fact that I am a big fan of politics of KG, His and
+                    Economy.
+                
+                    Additionally, as you can see I never forget to go to the gym.
+                </p>
+
+                <div class=" tap-titles">
+                    <p class="tap-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tap-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tap-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tap-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Python/CSS/HTML</li>
+                        <li><span>Poliglot</span><br>English/Turkish/Kyrgyz/Russian/Chinese</li>
+                        <li><span>Enginering</span><br>history/Human and society/Geography </li>
+                    </ul>
+                </div>
+                <div class="tap-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Present</span><br>Studing in Sapat High School with a good teacher </li>
+                        <li><span>2018 - 2023</span><br>IELTS preparation and my environment<br></li>
+                        <li><span>2021 - Present</span><br>In lessons with the best teacher and in olimpiads</li>
+                    </ul>
+                </div>
+                <div class="tap-contents" id="education">
+                    <ul>
+                        <li><span>2023 - Present</span><br>In the best lessons in my school and videos of Indian man
+                        </li>
+                        <li><span>2018 - 2023</span><br>At Sapat High School and School #6<br></li>
+                        <li><span>2021 - Present</span><br>At Sapat High School and in olimpiad lessons</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------- -->
+    <div id="gallery">
+        <div class="container">
+            <h1 class="sub-title">Some Photo</h1>
+            <div class="photo-list">
+                <div class="photo">
+                    <img src="IMAGES/photo1707920166 (2).jpeg">
+                </div>
+                <div class="photo">
+                    <img src="IMAGES/photo1707920166 (3).jpeg">
+                </div>
+                <div class="photo">
+                    <img src="IMAGES/photo1707920166 (4).jpeg">
+                </div>
+                <div class="photo">
+                    <img src="IMAGES/photo1707920166.jpeg">
+                </div>
+                <div class="photo">
+                    <img src="IMAGES/photo1707918421.jpeg">
+                </div>
+               
+            </div>
+        </div>
+
+    </div>
+    <!-- ------------------------------------------------- -->
+    
+    <!-- ------------------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contacts</h1>
+                    <p><i class="fa-solid fa-envelope"></i>ruslanovchika2022@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+996 507708090</p>
+                    <div class="social-icons">
+                        <a href="https://www.tiktok.com/@ruslanov_.07?lang=en"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/ruslanovllx/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://open.spotify.com/user/h1i5dj6z2ww0ywbs9j1dwy7bz?si=ba15286f49d54c80">
+ 
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email">
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>It has been made by Me.<i class="fas fa-heart"></i>Ruslanov</p>
+            </divs>
+        </div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tap-links");
+            var tabcontents = document.getElementsByClassName("tap-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+</body>
+
+</html>
